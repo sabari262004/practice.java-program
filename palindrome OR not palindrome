@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class sabarivasan {
+    public static void main(String [] args){
+        Scanner obj=new Scanner(System.in);
+        long num=obj.nextLong();
+        long sam=num;
+        long rev=0;
+        while(sam>0){
+            long d=(sam%10);
+            rev=(rev*10+d);
+            sam=sam/10;
+        }
+        if(rev==num)
+            System.out.print("palindrome");
+        else
+            System.out.print("notpalindrome");
+
+
+    }
+}
