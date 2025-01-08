@@ -1,0 +1,21 @@
+import java.util.*;
+class vijay{
+    public static void main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        int sum=obj.nextInt();
+        int[] arr=new int[sum];
+        for(int i=0;i<sum;i++)
+            arr[i]=obj.nextInt();
+        int z=0;
+        int o=0;
+  for(int i=0;i<sum;i++)
+  {
+      if(i==0)
+          z++;
+      else
+          o++;
+  }
+        System.out.println("no of zero"+z);
+        System.out.println("no of one"+o);
+    }
+}
